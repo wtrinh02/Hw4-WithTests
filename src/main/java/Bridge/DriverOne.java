@@ -7,9 +7,9 @@ public class DriverOne {
         //Part 1
 
         EmailChannel emailOnline = new EmailChannel(new OnlinePaymentNotification());
-        EmailChannel emailCash = new EmailChannel(new CashOnDelivaryPayment());
+        EmailChannel emailCash = new EmailChannel(new CashOnDeliveryPayment());
         SmsChannel smsOnline = new SmsChannel(new OnlinePaymentNotification());
-        SmsChannel smsCash = new SmsChannel(new CashOnDelivaryPayment());
+        SmsChannel smsCash = new SmsChannel(new CashOnDeliveryPayment());
 
         emailOnline.notifyPayment();
         emailCash.notifyPayment();
@@ -29,7 +29,7 @@ public class DriverOne {
         //Part 3
         PushChannel pushBitcoin = new PushChannel(new BitcoinPayment());
         PushChannel pushOnline = new PushChannel(new OnlinePaymentNotification());
-        PushChannel pushCash = new PushChannel(new CashOnDelivaryPayment());
+        PushChannel pushCash = new PushChannel(new CashOnDeliveryPayment());
 
         pushBitcoin.notifyPayment();
         pushOnline.notifyPayment();

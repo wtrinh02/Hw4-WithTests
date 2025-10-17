@@ -1,5 +1,5 @@
 package Bridge;
-public class CashOnDelivaryPayment implements Payment {
+public class CashOnDeliveryPayment implements Payment {
 
     @Override
     public void pay() {
